@@ -42,6 +42,8 @@ If keycloak comes up again after some seconds, it seems to like your new provide
 - Again in the Action menu at the top right now choose "Bind flow" and bind it to the "browser flow". Now "login via ip" will also be a possibility to login when trying to login via browser interface
 - In "Realm Settings" > "General" at the bottom "Unmanaged Attributes" should be enabled. We need this at the next step
 
+You have to do this steps for all realms where you want to use this provider plugin!
+
 ## 6th step: Use it
 
 - Edit the user that should be able to login via IP
