@@ -43,13 +43,13 @@ If keycloak comes up again after some seconds, it seems to like your new provide
 # 6th step: Use it
 
 - Edit the user that should be able to login via IP
-- The should be a tab "Attributes" after the "Details" tab. Open it
+- There should be a tab "Attributes" after the "Details" tab. Open it
 - Add at least this two attributes
   - key: `ipLogin` value: `1`
   - key: `ipAddresses` value: `<ip>`
 
 Only users with attribute `ipLogin=1` will have the possibility to login via IP. So there's a fast way to activate and de-activate this feature on per-user-basis.
-You can add as many lines with key `ipAddresses` as you like, if there are very much IP adresses to add (the value field has a restricted char length). You can also several IPs comma seperated in one field, eg. `127.0.0.1,192.168.178.2` or a IP range like `127.0.0.1-127.0.0.10`
+You can add as many lines with key `ipAddresses` as you like, if there are very much IP adresses to add (the value field has a restricted char length). You can also add several IPs comma seperated in one field, eg. `127.0.0.1,192.168.178.2` or a IP range like `127.0.0.1-127.0.0.10`
 
 # 7th step: Try it
 
